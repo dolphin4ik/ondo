@@ -1,8 +1,8 @@
 {
   "name": "ondo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "event emitter",
-  "main": "index.js",
+  "main": "ondo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
