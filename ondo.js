@@ -34,7 +34,10 @@
     		off: function(name){
     			delete events[name];
     			return this;
-    		}
+    		},
+            emit: function(name, context){
+                return this.do(name, context);
+            }
     	}
     	return ondo;
 
