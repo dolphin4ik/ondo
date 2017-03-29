@@ -11,6 +11,5 @@ e.on('hello', function(){ console.log('hello'); })
 e.do('greet'); // -> hello world
 ```
 .on(*event*, *callback*,*context*)
-.do(*event*, *context*)
 
-.**emit** == .**do**
+.do(*event*, *context*)
