@@ -10,6 +10,6 @@ e.on('hello', function(){ console.log('hello'); })
  
 e.do('greet'); // -> hello world
 ```
-.on(*event*, *callback*,*context*)
+.on(*event*, *callback*, *context*)
 
-.do(*event*, *context*)
+.do(*event*, *context*, *arguments..*)
