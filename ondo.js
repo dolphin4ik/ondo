@@ -22,7 +22,7 @@
     			if(!events[name]){
     				throw "No '" + name + "' event registered.";
     			} else {
-    				var args = [].slice.call(arguments, 1);
+    				var args = [].slice.call(arguments, 2);
     				events[name].forEach(function(e){
     					if(e.handler){
     						e.handler.apply((context || e.context), args);
@@ -34,10 +34,7 @@
     		off: function(name){
     			delete events[name];
     			return this;
-    		},
-            emit: function(name, context){
-                return this.do(name, context);
-            }
+    		}
     	}
     	return ondo;
 
