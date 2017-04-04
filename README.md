@@ -1,6 +1,8 @@
 # ondo
 **on** something **do** something
 
+Get it from [CDN](https://unpkg.com/ondo@latest)
+
 ```js
 let e = ondo();
 
@@ -10,6 +12,7 @@ e.on('hello', function(){ console.log('hello'); })
  
 e.do('greet'); // -> hello world
 ```
-.on(*event*, *callback*, *context*)
+.on(*event*, *callback*,*context*)
+.do(*event*, *context*)
 
-.do(*event*, *context*, *arguments..*)
+.**emit** == .**do**
