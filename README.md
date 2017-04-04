@@ -14,5 +14,3 @@ e.do('greet'); // -> hello world
 ```
 .on(*event*, *callback*,*context*)
 .do(*event*, *context*)
-
-.**emit** == .**do**
