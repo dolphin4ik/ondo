@@ -31,9 +31,11 @@
     			}
     			return this;
     		},
-    		off: function(name){
+    		off: function(name, context){
+                var args = [].slice.call(arguments, 1);
+                args.unshift('off');
     			delete events[name];
-    			return this;
+                return this.do.apply(null, args);
     		}
     	}
     	return ondo;
