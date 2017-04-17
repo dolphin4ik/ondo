@@ -20,7 +20,7 @@
     		},
     		do: function(name, context){
     			if(!events[name]){
-    				throw "No '" + name + "' event registered.";
+    				throw "No '" + name + "' event registered";
     			} else {
     				var args = [].slice.call(arguments, 2);
     				events[name].forEach(function(e){
@@ -28,6 +28,13 @@
     						e.handler.apply((context || e.context), args);
     					}
     				});
+                    if(events['*']){
+                        events['*'].forEach(function(e){
+                            if(e.handler){
+                                e.handler.apply((context || e.context), args);
+                            }
+                        });
+                    }
     			}
     			return this;
     		},
@@ -35,7 +42,8 @@
                 var args = [].slice.call(arguments, 1);
                 args.unshift('off');
     			delete events[name];
-                return this.do.apply(null, args);
+                this.do.apply(null, args);
+                return this;
     		}
     	}
     	return ondo;
