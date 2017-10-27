@@ -6,7 +6,7 @@ No dependencies. Works everywhere.
 **on** something **do** something
 
 Get it from [CDN](https://unpkg.com/ondo@latest)
-Try it on [RunKit](https://runkit.com/58e8a7572e03700014c19610/58e8a7572e03700014c19611)
+Try it on [RunKit](https://runkit.com/embed/iucckxasqt6q)
 
 .on(*event*, *callback*, *context*)
 
